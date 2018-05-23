@@ -1,0 +1,44 @@
+{
+	"name": "webview-d",
+	"version": "0.0.1",
+	"license": "MIT",
+	"authors": [
+		"Joseph M. Rice"
+	],
+	"copyright": "Copyright © 2018, Joseph M. Rice",
+	"description": "webview (https://github.com/zserge/webview) bindings for D programming language",
+	"configurations": [	
+		{
+			"name": "lib",
+			"platforms": ["linux"],
+			"targetType": "library",
+			"targetPath": "./lib/",
+			"sourceFiles": [
+				"/usr/lib/webview/libwebview_static.a"
+			],
+			"libs-linux": [
+				"webkit2gtk-4.0",
+				"gtk-3",
+				"gdk-3",
+				"pangocairo-1.0",
+				"pango-1.0",
+				"atk-1.0",
+				"cairo-gobject",
+				"cairo",
+				"gdk_pixbuf-2.0",
+				"soup-2.4",
+				"gio-2.0",
+				"gobject-2.0",
+				"javascriptcoregtk-4.0",
+				"glib-2.0"				
+			]			
+		},	
+		{
+			"name": "lib_shared",
+			"platforms": ["linux"],
+			"targetType": "library",
+			"targetPath": "./lib/",			
+			"libs": ["webview"]
+		}		
+	]
+}
