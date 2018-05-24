@@ -14,7 +14,7 @@
 			"targetType": "library",
 			"targetPath": "./lib/",
 			"sourceFiles": [
-				"/usr/lib/webview/libwebview_static.a"
+				"/usr/local/lib/webview/libwebview_static.a"
 			],
 			"libs-linux": [
 				"webkit2gtk-4.0",
