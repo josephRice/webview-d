@@ -1,6 +1,6 @@
 {
 	"name": "webview-d",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"license": "MIT",
 	"authors": [
 		"Joseph M. Rice"
@@ -11,11 +11,8 @@
 		{
 			"name": "lib",
 			"platforms": ["linux"],
-			"targetType": "library",
+			"targetType": "staticLibrary",
 			"targetPath": "./lib/",
-			"sourceFiles": [
-				"/usr/local/lib/webview/libwebview_static.a"
-			],
 			"libs-linux": [
 				"webkit2gtk-4.0",
 				"gtk-3",
@@ -30,7 +27,8 @@
 				"gio-2.0",
 				"gobject-2.0",
 				"javascriptcoregtk-4.0",
-				"glib-2.0"				
+				"glib-2.0",
+				"webview"
 			]			
 		},	
 		{

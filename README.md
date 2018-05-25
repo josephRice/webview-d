@@ -35,7 +35,7 @@ from the cloned webview git project
 ```
 $ mkdir build
 $ cd build
-$ cmake ..
+$ cmake -DCMAKE_INSTALL_PREFIX="/usr/" ..
 $ make
 $ sudo make install
 ```

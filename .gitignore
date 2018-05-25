@@ -1,3 +1,4 @@
 .dub/
 example/webview-d_test/webview-d_test
+example/webview-d_test/dub.selections.json
 lib/

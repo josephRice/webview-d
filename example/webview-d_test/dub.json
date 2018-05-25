@@ -9,6 +9,5 @@
 	"targetType": "executable",
 	"dependencies": {
 		"webview-d": "~>0.0.1"
-	},
-	"libs": ["webview"]
+	}
 }
